@@ -65,7 +65,7 @@ public:
 	double ApproximatePrice();
 	std::string CoinBase(const CoinCalculator& CC);
 
-	int AddCoins();      //CASE 4
+	int AddCoins();       //CASE 4
 	int ShowCoinData();   //CASE 5
 	int ClearCoinList();  //CASE 6
 	int DataReport();     //CASE 7
