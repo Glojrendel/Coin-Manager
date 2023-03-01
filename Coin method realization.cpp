@@ -251,7 +251,7 @@ int CoinCalculator::Menu()
 		cout << "(0)| Quit";
 		cout << "\n_____________________________\n";
 		
-		cin >> select;
+		cout << "|-> "; cin >> select;
 		switch(select)
 		{
 		case Calculate_Profit:               // CASE 1
@@ -312,7 +312,7 @@ int main()
         curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
         curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
 
-        // Получение HTML-кода
+        // ГЏГ®Г«ГіГ·ГҐГ­ГЁГҐ HTML-ГЄГ®Г¤Г 
         std::string html;
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, static_cast<size_t (*)(char*, size_t, size_t, void*)>([](char* ptr, size_t size, size_t nmemb, void* userdata) -> size_t {
             ((std::string*)userdata)->append(ptr, size * nmemb);
